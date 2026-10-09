@@ -9,6 +9,8 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 
 ### Added
 
+- Soporte de monedas BOB, USD y EUR en `formatPrice(amount, currency)`.
+
 ### Changed
 
 ### Fixed
