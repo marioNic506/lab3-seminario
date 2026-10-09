@@ -8,6 +8,7 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Added
+- Recibo imprimible con el comando `receipt` (`buildReceipt`).
 
 ### Changed
 
