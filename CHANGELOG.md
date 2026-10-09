@@ -6,7 +6,7 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
 y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Unreleased]
-
+- Agregado el calculo del IVA del 13% y la opcion de incluirlo en el total del carrito.
 ### Added
 
 ### Changed

@@ -28,3 +28,4 @@ export function calculateTotal(items, { includeTax = false } = {}) {
   }
   return round2(subtotal);
 }
+
