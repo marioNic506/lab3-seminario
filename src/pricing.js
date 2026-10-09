@@ -1,4 +1,5 @@
 import { round2 } from './money.js';
+import { calculateTax } from './tax.js';
 
 /**
  * Calcula el total de un carrito de compras.
@@ -9,7 +10,8 @@ import { round2 } from './money.js';
  *  - Un carrito vacío vale 0.
  *
  * @param {Array<{price: number, quantity: number}>} items Ítems del carrito.
- * @returns {number} Total del carrito.
+ * @param {boolean} [options.includeTax=false] Si es true, agrega el IVA del 13%.
+ * @returns {number} Total del carrito, con IVA si includeTax es true. 
  *
  * @example
  * calculateTotal([])                                   // 0
@@ -19,7 +21,10 @@ import { round2 } from './money.js';
  *   { price: 40, quantity: 1 },
  * ])                                                   // 91
  */
-export function calculateTotal(items) {
+export function calculateTotal(items, { includeTax = false } = {}) {
   const subtotal = items.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  if (includeTax) {
+    return round2(subtotal + calculateTax(subtotal));
+  }
   return round2(subtotal);
 }
