@@ -3,3 +3,4 @@ export * from './catalog.js';
 export * from './pricing.js';
 export * from './format.js';
 // Los módulos nuevos se exportan debajo de esta línea
+export { TAX_RATE, calculateTax, addTax } from './tax.js';
