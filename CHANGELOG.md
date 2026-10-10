@@ -22,3 +22,4 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 - Cálculo del total de un carrito (`calculateTotal`).
 - Formato de precios en bolivianos (`formatPrice`).
 - CLI básica con los comandos `list` y `search`.
+- Se agregaron los descuentos SAVE10, SAVE20 y BLACKFRIDAY.
